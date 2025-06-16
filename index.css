@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+:root {
+  --primary: #00FF73;
+  --background: #1A1A1A;
+  --text: #FFFFFF;
+  --card-bg: #F5F5F5;
+  --secondary: #2196F3;
+  --wp1: 20vw;
+  --hp1: 40vh;
+
+  --wpof: fit-content;
+  --hpof: fit-content;
+  --wpofup: 22vw;
+  --hpofup: 50vh;
+  --bness: 40%;
+}
+
+/*ยังทำrespone ไม่เก่ง*/
+/* แล็ปท็อป min-width: 992px (LG) */
+@media all {
+  *:hover{cursor: default; }
+  body {
+    background-image: url(PIC/pexels-mayday-1365795.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 50%  top 0%;
+    margin: 0;
+  }
+
+  #bggfindex {
+    width: 100%;
+    height: 100%;
+    border-radius: 10% 10% 0% 0%;
+  }
+  .plat{
+    background-color: #00ff7300;
+    width: var(--wp1);
+    height: var(--hp1);
+    overflow: hidden;
+    margin: auto;
+  }
+  .platof{
+    width: var(--wpof);
+    height: var(--hpof);
+    border-radius: 10%;
+    background-color: #4a148c;
+    border: solid 5px #7e57c2;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  .platofon{
+    width: var(--wpof);
+    height: var(--hpof);
+    border-radius: 10%;
+    background-color: #4a148c;
+    border: solid 5px #7e57c2;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  a{text-decoration: none;}
+  #biggerplat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2195f300;
+    width: 50vw;
+    height: 80vh;
+    flex-wrap: wrap;
+    position: absolute; 
+      /*top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);*/
+      right: 0px;
+  }
+  .Tex{
+    font-family: "K2D", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    color: #00FF73;
+    
+  }.Texer{
+    color: red;
+    text-align: center;
+  }
+
+  #bgtext{
+    position: absolute;
+    background-color: #00ff7300;
+    z-index: 8;
+    width: 50vw;
+    height: 100vh;
+    /*box-shadow: 0 0 20px 50px#1A1A1A;*/
+  }
+  #bgtext h1{
+    font-size: 20vh;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-weight: 10;
+    color: #fff;
+    text-shadow: 0px 0px 30px  #4820a7; 
+    box-shadow: 0 0 20px 30px#181717;
+  }
+  #bar{
+    background-color: #2a282b;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    width: 100%;
+    height: 10vh;
+    z-index: 10;
+    color: #fff;
+    font-size:8vh;
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    text-shadow: 0 0 10px ;
+  }
+  #bar2{
+    display: flex;
+    background-color: #2a282b;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 10vh;
+    z-index: 10;
+    bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+
+  }
+  #top-bar{
+    
+    display: inline-flex;
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+    gap: 10px; /* ระยะห่างระหว่าง p กับ img */
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  .section{
+    height: 100vh; /* ให้แต่ละส่วนสูงเท่าหน้าจอ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  #bar2 p { text-align: center;color: white;}
+
+  #biggerplat >:nth-child(2){filter: brightness(var(--bness));}
+  #biggerplat >:nth-child(3){filter: brightness(var(--bness));}
+  #biggerplat >:nth-child(4){filter: brightness(var(--bness));}
+  
+  .Tex:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 100vw 50px #4a148c;/*#4a148c*/}
+  #pngspa{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  } 
+}
+
+
+
+
+
+
+
+/* มือถือเล็ก (XS) */
+@media (max-width: 575.98px) {
+  #pngspa{
+    width: 5vh;
+    height: 5vh;
+    object-fit: unset;
+    z-index: 1;
+    margin-top: 1vh;
+  }
+  #bgtext h1{font-size: 5vh;}
+  #biggerplat{
+    display: block;
+    flex-direction: none;
+    margin-top: 20vh;
+  }
+    #bgtext{
+    position:absolute;
+    background-color: #00ff7300;
+    top: 5vh;
+    z-index: 1;
+    width: 60vw;
+    height: 20vh;
+  }
+    #biggerplat{
+    display: grid;
+    grid-template-columns: 39vw 39vw;
+    grid-template-rows: 31vh 31vh;
+    flex-direction: unset;
+    justify-content: unset;
+    align-items: unset;
+    background-color: #2195f300;
+    width: none;
+    height: none;
+    flex-wrap: unset;
+    position: unset; 
+    z-index: 1;
+    gap: 5vh;
+  }
+  .plat{
+    width:40vw;
+    height:20vh;
+  }
+
+  .Tex{font-size: 5vw;}
+  .Texer{font-size: 5vw;}
+  .platofon{width: ;height: ;}
+  .platofon{width: ;height: ;}
+  #top-bar{
+    display: inline-flex;
+    align-items:unset; /* จัดให้อยู่กลางแนวตั้ง */
+    gap: 0px; /* ระยะห่างระหว่าง p กับ img */
+    justify-content:unset;
+    flex-direction: row;
+    margin-left: unset;
+    transform:unset;
+    z-index: 1;
+    width: 100vw;
+    height: 12vh;
+  }
+  #bar{
+    background-color: #2a282b00;
+    backdrop-filter: blur(0px);
+    background: transparent;
+    width: fit-content;
+    margin-top: 0;
+    height: 10vh;
+    z-index: 10;
+    color: #fff;
+    font-size:5vh;
+    text-align: unset;
+    font-family: "Chakra Petch", sans-serif;
+    text-shadow: 0 0 10px ;
+  }
+}
+  @media (max-width: 575.98px) and (max-height: 455px){
+    #bgtext{
+      position:absolute;
+      background-color: #00ff7300;
+      top: 3vh;
+      z-index: 1;
+      width: 60vw;
+      height: 20vh;
+    }
+    #biggerplat{margin-top: 10vh;}
+    #bgtext h1{box-shadow: 0 0 0px 0px#18171700;}
+  }
+
+/* มือถือทั่วไป (SM) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .plat{height:30vh;}
+  #bgtext h1{
+  text-shadow: 1px 1px 30px  #4820a7; 
+  box-shadow: 0 0 0px 0px#181717;
+  font-size: 10vw;}
+  .Tex{ font-size: 3vw;}.Texer{ font-size: 3vw;}
+/* แท็บเล็ต */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #bgtext h1{font-size: 4em;}
+}
+/* แล็ปท็อป (992) */
+@media (min-width: 992px) {
+  #bgtext h1{font-size: 5em;}
+  .plat{height: 40vh;}
+}
+/* (1440) */
+@media (min-width: 1440px) {
+  .plat{width: 10vw; height: 45vh;}
+}
+/* (4K) */
+@media (min-width: 2560px) {
+  .plat{width: 40vh; height: 50vh;}
+  #bgtext h1{font-size: 10em;}
+}
+}
+
+
+
+
+
+
