@@ -285,6 +285,33 @@
   #bgtext h1{font-size: 10em;}
 }
 }
+/* iPad แนวตั้ง */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .plat {
+    width: 30vw;
+    height: 35vh;
+  }
+  #bgtext h1 {
+    font-size: 6vw;
+  }
+  .Tex {
+    font-size: 3vw;
+  }
+}
+
+/* iPad แนวนอน */
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .plat {
+    width: 20vw;
+    height: 40vh;
+  }
+  #bgtext h1 {
+    font-size: 5vw;
+  }
+  .Tex {
+    font-size: 2vw;
+  }
+}
 
 
 
